@@ -1,18 +1,18 @@
 <h1>New Song Form</h1>
 <%= form_tag('/songs') do %>
-  Title: <%= text_field_tag 'song[title]' %> <br>
+  Title: <%= text_field_tag 'song_title' %> <br>
   <br>
   Released:
-  <%= radio_button_tag 'song[released]', 'true' %>
+  <%= radio_button_tag 'song_released', 'true' %>
   <%= label_tag "True" %>
-  <%= radio_button_tag 'song[released]', 'false' %>
+  <%= radio_button_tag 'song_released', 'false' %>
   <%= label_tag "False" %> <br>
   <br>
-  Release Year: <%= text_field_tag 'song[release_year]' %> <br>
+  Release Year: <%= text_field_tag 'song_release_year' %> <br>
   <br>
-  Artist Name: <%= text_field_tag 'song[artist_name]' %> <br>
+  Artist Name: <%= text_field_tag 'song_artist_name' %> <br>
   <br>
-  Genre: <%= text_field_tag 'song[genre]' %> <br>
+  Genre: <%= text_field_tag 'song_genre' %> <br>
   <br>
   <%= submit_tag "Submit" %>
 <% end %>
