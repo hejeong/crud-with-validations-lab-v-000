@@ -3,7 +3,5 @@ class Song < ActiveRecord::Base
   validates :released, inclusion: {in: %w(true false)}
   validates :artist_name, presence: true
 
-  def released?
-    released == true
-  end
+
 end
